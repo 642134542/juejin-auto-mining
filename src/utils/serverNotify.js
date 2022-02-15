@@ -33,12 +33,11 @@ const config = require('./config.js');
 
 let msg = '掘金：\n';
 module.exports = function bot(message) {
-  console.log('mes', message);
   if(config.SERVERID) {
     msg += message + '\n';
     send({
       pushKey: config.SERVERID, // 企业 ID
-      title: '掘金', // title
+      title: msg, // title
       desp: msg, // desp
     }).catch((error) => {
       console.log(`发送失败 => ${error}`);
