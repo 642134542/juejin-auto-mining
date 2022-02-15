@@ -47,7 +47,7 @@ if (!(COOKIE && TOKEN)) {
     const resInfo = await miningApi.getInfo(juejinUid, time);
     deep = resInfo.gameInfo ? resInfo.gameInfo.deep : 0;
     gameId = resInfo.gameInfo ? resInfo.gameInfo.gameId : 0;
-    todayDiamond = resInfo.userInfo.todayDiamond;
+    todayDiamond = resInfo.userInfo.todayDiamond || 0;
     todayLimitDiamond = resInfo.userInfo.todayLimitDiamond;
     return Promise.resolve(resInfo);
   }
