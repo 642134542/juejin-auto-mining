@@ -37,7 +37,7 @@ module.exports = function bot(message) {
     msg += message + '\n';
     send({
       pushKey: config.SERVERID, // 企业 ID
-      title: msg, // title
+      title: '掘金', // title
       desp: msg, // desp
     }).catch((error) => {
       console.log(`发送失败 => ${error}`);
