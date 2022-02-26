@@ -33,7 +33,6 @@ const config = require('./config.js');
 
 let msg = '掘金：\n';
 module.exports = function bot(message) {
-  console.log('mes', message);
   if(config.SERVERID) {
     msg += message + '\n';
     send({

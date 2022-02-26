@@ -1,8 +1,8 @@
 /**
  * Created by huangqihong on 2022/01/07 23:35:00
  */
-const dotEnv = require('dotenv');
-dotEnv.config('./env');
+// const dotEnv = require('dotenv');
+// dotEnv.config('./env');
 
 const { COOKIE, TOKEN } =  require('./utils/config.js');
 const message =  require('./utils/message');
